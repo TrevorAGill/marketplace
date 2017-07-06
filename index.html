@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>Welcome to our online MarketPlace!</h1>
+      <h4>We sell exotic chess sets from all over the world!</h4>
+    </div>
+    <div class="container main">
+      <div class="container cart">
+        <img src="img/img1.jpg" alt="chess set 1" height=300 width=500>
+        <img src="img/img2.jpg" alt="chess set 2" height=300 width=500>
+        <img src="img/img3.jpg" alt="chess set 3" height=300 width=500>
+     </div>
+      <div class="container checkout">
+        <h3>Are you ready to order?</h3>
+        <form id="formCheckout">
+          <div class="form-group name">
+            <label for="name">Your name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group address">
+            <label for="street">Street:</label>
+            <input id="street" class="form-control" type="text">
+            <label for="city">City:</label>
+            <input id="city" class="form-control" type="text">
+            <label for="state">State:</label>
+            <select class="form-control" id="state">
+              <option>--</option>
+              <option>WA</option>
+              <option>OR</option>
+              <option>CA</option>
+              <option>ID</option>
+            </select>
+            <label for="zip">Zip:</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="container receipt">
+          <p id="receipt">Thank you, <span id="userName"></span> for ordering with ExoticChess! Your order will be shipped to <span id="userStreet"> </span> <span id="userCity"> </span>, <span id="userState"></span> <span id="userZip"></span>!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
